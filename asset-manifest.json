@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tempracture/static/css/main.0bd9a3ca.css",
+    "main.js": "/Tempracture/static/js/main.80a04bdf.js",
+    "index.html": "/Tempracture/index.html",
+    "main.0bd9a3ca.css.map": "/Tempracture/static/css/main.0bd9a3ca.css.map",
+    "main.80a04bdf.js.map": "/Tempracture/static/js/main.80a04bdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bd9a3ca.css",
+    "static/js/main.80a04bdf.js"
+  ]
+}
