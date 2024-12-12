@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid black; Black border */
+}
+
+.inputData {
+    margin-bottom: 20px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color:  #e5eafe;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid black; Black border for the input field */
+    /* color: black; Black text in the input */
+}
+
+.info {
+    color: #ffffff;
+    margin-top: 20px;
+
+}
+h2{
+margin-top: 10%;
+}
+
+.fa-solid{
+    font-size: 50px;
+    color: #7887d4;
+}
+
+.location {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #7887d4;
+}
+
+.temp {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0%;
+    color: #96a2db;;
+}
+
+.tempmin_max {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #96a2db;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0.7;
+    z-index: -1;
+    border-radius: 100%;
+    animation: wave-animation 4s infinite ease-in-out;
+}
+
+.wave.-one {
+    animation-delay: 0s;
+}
+
+.wave.-two {
+    animation-delay: 1s;
+}
+
+.wave.-three {
+    animation-delay: 2s;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* Keyframe for wave animation */
+@keyframes wave-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation for temperature display */
+@keyframes tempAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 90%;
+    }
+
+    .temp {
+        font-size: 45px;
+    }
+
+    .location {
+        font-size: 20px;
+    }
+
+    .tempmin_max {
+        font-size: 16px;
+    }
+}
